@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- svg and h1 header here -->
+         <img src="../Multimedia/new_cn_logo.svg" alt="New CN Logo"
+         title="New CN Logo">
+         <h2>Create an Account</h2>
+    </header>
+    <main>
+        <form action="index.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!-- Full name, email, id/pass, user type, select course and register -->
+                 <br><br>
+                 <label for="name">Full Name: </label>
+                 <input type="text" id="name" name="Name" required>
+                 <br><br>
+                 <label for="email">Email: </label>
+                 <input type="email" id="email" name="Email" required>
+                 <br><br>
+                 <label for="un">Username: </label>
+                 <input type="text" id="un" name="Username" required>
+                 <br><br>
+                 <label for="pass">Password: </label>
+                 <input type="password" id="pass" name="Password" required>
+                 <br><br>
+                 <label for="ut">User Type: </label>
+                 <select name="User Type" id="ut" required>
+                    <option value="select">Select user type</option>
+                 </select>
+                 <br><br>
+                 <label for="course">Select Course: </label>
+                 <select name="Course" id="course" required>
+                    <option value="101">Course 1 - Web Development</option>
+                    <option value="102">Course 2 - Data Science Basics</option>
+                    <option value="103">Course 3 - Digital Marketing Strategies</option>
+                    <option value="104">Course 4 - Mobile App Development</option>
+                    <option value="105">Course 5 - Machine Learning Fundamentals</option>
+                    <option value="106">Course 6 - Android Development</option>
+                    <option value="107">Course 7 - Node JS</option>
+                    <option value="108">Course 8 - React JS</option>
+                 </select>
+                 <br><br>
+                 <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
