@@ -15,6 +15,12 @@ keywords for SEO, etc.
 
 - `<link>` defines the relationship b/w this document and an external source
 
+  - `rel` specifies relationship to the linked document,
+
+  - `type` its type of media, and
+
+  - `href` the hyperlink destination
+
 - It is mostly used to link an external style sheet or add a *favicon* to the
 website
 
