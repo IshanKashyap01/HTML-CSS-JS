@@ -20,7 +20,7 @@ and `height` attributes
 </audio>
 ```
 
-- `<source>` tags are used as an alternate to the `src` tag in the `audio` and
+- `<source>` tags are used as an alternate to the `src` attribute in the `audio` and
 `video` tags
 
 - There can be any number of `source` tags to ensure that the media is played
