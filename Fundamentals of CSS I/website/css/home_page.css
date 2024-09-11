@@ -1,0 +1,41 @@
+body
+{
+    margin: 0;
+    background-color: rgba(225, 224, 224, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+header
+{
+    background-color: rgb(142, 172, 183);
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    margin-left: auto;
+    color: white;
+}
+#external a
+{
+    text-decoration: none;
+    color: white;
+}
+#external a:hover
+{
+    text-decoration: underline;
+}
+h2
+{
+    color: royalblue;
+    font-style: italic;
+}
+article, section
+{
+    width: 90%;
+    padding: 1%;
+    margin-left: 1.5%;
+    margin-bottom: 1%;
+    background-color: white;
+    text-align: justify;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
