@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please Enter your Details</h1>
+    <form action="" method="post" target="_blank">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fn">First Name: </label>
+            <input type="text" name="first_name" id="fn" required>
+            <br>
+            <label for="ln">Last Name: </label>
+            <input type="text" name="last_name" id="ln" required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" required>
+            <br>
+            <label for="gen">Gender: </label>
+            <select name="gender" id="gen" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+        </fieldset>
+        <!-- Interests -->
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" name="interests" id="mu" value="Music">
+            <label for="mu">Music</label>
+            <input type="checkbox" name="interests" id="sp" value="Sports">
+            <label for="sp">Sports</label>
+            <input type="checkbox" name="interests" id="re" value="Reading">
+            <label for="re">Reading</label>
+        </fieldset>
+        <!-- Location -->
+        <fieldset>
+            <legend>Location</legend>
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+                <option value="US">United States</option>
+            </select>
+            <br>
+            <label for="city">City: </label>
+            <select name="city" id="city">
+                <option value="nyc">New York City</option>
+            </select>
+        </fieldset>
+        <!-- Additional Information -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comm">Comments: </label>
+            <textarea name="Comments" id="comm" rows="4" cols="30"
+            placeholder="Your comments go here."></textarea>
+            <br>
+            <label for="pic">Profile Picture: </label>
+            <input type="file" id="pic" accept="image/.jpg, .jpeg, .png" capture="camera" required>
+        </fieldset>
+        <!-- Submit Options -->
+        <fieldset>
+            <legend>Submit Options</legend>
+            <label for="nil">Preferred Submission Method: </label>
+            <input type="radio" name="submit_option" id="online" value="Online">
+            <label for="online">Online</label>
+            <input type="radio" name="submit_option" id="offline" value="Offline">
+            <label for="offline">Offline</label>
+            <br>
+            <label for="newsletter">Subscribe to Newsletter: </label>
+            <input type="checkbox" id="newsletter" name="newsletter_subscription">
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
