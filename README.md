@@ -17,4 +17,12 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 4. [Forms](Forms/)
 
+### Week 2
+
+1. [Semantics](Semantics/)
+
+2. [HTML Project](HTML%20Project/)
+
+3. [Fundamentals of CSS I](Fundamentals%20of%20CSS%20I/)
+
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
