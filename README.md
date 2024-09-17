@@ -25,4 +25,6 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Fundamentals of CSS I](Fundamentals%20of%20CSS%20I/)
 
+---
+
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
