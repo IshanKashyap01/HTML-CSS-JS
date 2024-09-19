@@ -1,0 +1,49 @@
+div
+{
+    width: 25%;
+}
+
+label, input, button, textarea
+{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+label, input
+{
+    color: black;
+}
+
+button
+{
+    margin: 10px auto;
+    background-color: rgb(66, 158, 215);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 40%;
+}
+
+footer
+{
+    padding: 25px;
+}
+
+.info
+{
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+#bottom_link
+{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(66, 158, 215);
+    outline: solid 5px blue;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
