@@ -22,8 +22,17 @@ same *class* name
 - In case of overlapping b/w the same selector, the former will be ignored; this
 is known as *cascading*
 
+- That is, if the same property for the same selector is mentioned more than once,
+then the last one will be applied
+
 ```CSS
-h2 {...} /* this will be ignored */
+h2 /* this will be ignored */ 
+{
+    margin: 1px;
+}
 ...
-h2 {...} /* this will be used */
+h2 /* this will be used */ 
+{
+    margin: 2px;
+} 
 ```
