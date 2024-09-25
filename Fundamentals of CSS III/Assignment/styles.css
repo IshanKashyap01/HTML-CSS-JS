@@ -1,0 +1,39 @@
+body
+{
+    background: linear-gradient(to top, rgb(12, 105, 227), rgb(17, 172, 224), rgb(46, 246, 229));
+    margin: 0;
+    padding: 0;
+}
+main
+{
+    margin: 0 auto;
+    padding: 10px;
+    width: 40vw;
+    height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+}
+h1
+{
+    text-align: center;
+}
+section
+{
+    border: 1px solid  #ccc;
+    border-radius: 5px;
+    backdrop-filter: drop-shadow(0px 0px 0.75rem black);
+    margin: 20px;
+    padding: 15px;
+}
+section:nth-of-type(2)
+{
+    background: linear-gradient(to right, rgb(85, 255, 170), rgb(203, 249, 167));
+}
+section:nth-of-type(3)
+{
+    background: radial-gradient(rgb(255, 152, 141), rgb(253, 202, 196));
+}
+section:last-of-type
+{
+    background: conic-gradient(from 180deg at 46% 50%, rgb(255, 237, 211), rgb(255, 196, 165));
+}
