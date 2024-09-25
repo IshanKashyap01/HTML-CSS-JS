@@ -25,6 +25,14 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Fundamentals of CSS I](Fundamentals%20of%20CSS%20I/)
 
+### Week 3
+
+1. [Fundamentals of CSS II](Fundamentals%20of%20CSS%20II/)
+
+2. [Fundamentals of CSS III](Fundamentals%20of%20CSS%20III/)
+
+3. [Fundamentals of CSS IV](Fundamentals%20of%20CSS%20IV/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
