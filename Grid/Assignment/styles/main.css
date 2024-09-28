@@ -1,0 +1,25 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 237, 237);
+    margin: 0px auto;
+}
+main
+{
+    display: grid;
+    place-items: center;
+    row-gap: 10px;
+}
+#ad figure
+{
+    margin: 0;
+}
+.row
+{
+    background-color: white;
+    width: 100%;
+}
+figcaption
+{
+    text-align: center;
+}
