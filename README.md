@@ -37,6 +37,10 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 1. [Flex](Flex/)
 
+2. [Grid](Grid/)
+
+3. [Dashboard Project](Dashboard%20Project/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)

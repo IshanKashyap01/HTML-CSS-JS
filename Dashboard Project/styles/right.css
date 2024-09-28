@@ -1,0 +1,18 @@
+#right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+}
+article h2
+{
+    text-align: center;
+    text-decoration: underline;
+}
+article h2:hover
+{
+    text-decoration-color: goldenrod;
+    font-size: 32px;
+    transition: 1s;
+}
