@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>HEADER</header>
+    <nav>NAV BAR</nav>
+    <main>
+        <div>Card1</div>
+        <div>Card2</div>
+        <div>Card3</div>
+        <div>Card4</div>
+        <div>Card5</div>
+        <div>Card6</div>
+    </main>
+    <footer>FOOTER</footer>
+</body>
+<style>
+    body
+    {
+        display: grid;
+        grid-template-rows: 100px 1fr 30px;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "head head" "nav main" "foot foot";
+        width: 80vw;
+        height: 90vh;
+    }
+    header
+    {
+        background-color: lightblue;
+        grid-area: head;
+    }
+    nav
+    {
+        background-color: lightgreen ;
+        grid-area: nav;
+    }
+    main
+    {
+        background-color: lightpink;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(50px, auto));
+        grid-auto-rows: 100px;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 10px 20px;
+    }
+    footer
+    {
+        background-color: darkgrey;
+        grid-area: foot;
+    }
+    div
+    {
+        background-color: lightgoldenrodyellow;
+        border: 1px solid yellow;
+        border-radius: 5px;
+        padding: 20px;
+    }
+</style>
+</html>

@@ -1,0 +1,22 @@
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    row-gap: 20px;
+    padding: 10px;
+}
+section
+{
+    width: 45%;
+    padding: 1.5%;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(192, 192, 192);
+}
+section:nth-of-type(1), section:nth-of-type(4), section:nth-of-type(5)
+{
+    background-color: rgba(151, 4, 151, 0.1);
+    border-left: 5px solid rgb(194, 151, 246);
+}

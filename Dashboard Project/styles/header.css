@@ -1,0 +1,30 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+header h1
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+header input
+{
+    margin-right: 5%;
+    width: 200px;
+    height: 25px;
+    border: 0px solid white;
+    border-radius: 10px;
+    align-self: center;
+    padding: 0;
+}
+header input::placeholder
+{
+    color: rgb(193, 193, 193);
+}
+header input:focus
+{
+    outline: 2px solid lightgreen;
+}

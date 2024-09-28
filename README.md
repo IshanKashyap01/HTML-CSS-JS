@@ -33,6 +33,14 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Fundamentals of CSS IV](Fundamentals%20of%20CSS%20IV/)
 
+### Week 4
+
+1. [Flex](Flex/)
+
+2. [Grid](Grid/)
+
+3. [Dashboard Project](Dashboard%20Project/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)

@@ -1,0 +1,35 @@
+.card-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: ShortBaby;
+}
+.card
+{
+    height: 100px;
+    width: 180px;
+    border-radius: 20px;
+}
+.card i
+{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.card:hover
+{
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.card-head
+{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.card-data
+{
+    margin-top: 4px;
+    font-size: 15px;
+    margin-left: 10px;
+}

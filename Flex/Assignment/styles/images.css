@@ -1,0 +1,34 @@
+figure
+{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 25px;
+    column-gap: 15px;
+}
+img
+{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    flex-shrink: 2;
+}
+figcaption
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+h2
+{
+    margin: 15px 0px 2px;
+    font-size: larger;
+}
+span
+{
+    color: grey;
+}
+figure, h2, span, figcaption
+{
+    flex: 1 1 10px;
+}

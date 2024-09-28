@@ -1,0 +1,18 @@
+#deals
+{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+#deals div
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#deals figure
+{
+    padding: 10px;
+    border: 1px solid rgb(233, 233, 233);
+    margin: 20px;
+}

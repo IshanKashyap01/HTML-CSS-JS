@@ -1,0 +1,30 @@
+footer
+{
+    background-color: rgba(17, 15, 15, 0.87);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px 30px 30px;
+}
+footer section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h3
+{
+    color: grey;
+    font-size: large;
+}
+footer a
+{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+footer
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+footer div
+{
+    margin-bottom: 10px;
+}
+footer a
+{
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+footer a:hover
+{
+    color: lightgray;
+}
+footer a:first-child, footer a:last-child
+{
+    margin-left: 0;
+}

@@ -1,0 +1,15 @@
+#board
+{
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 50px;
+    padding: 10px;
+}
+#board img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

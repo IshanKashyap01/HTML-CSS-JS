@@ -1,0 +1,43 @@
+#schedule
+{
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 70px;
+    border-radius: 30px;
+    height: 450px;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+#schedule-head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#schedule-head h3
+{
+    margin: 0px auto auto 20px;
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 0;
+}
+#schedule-head p
+{
+    margin: 0 20px auto auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+.schedule-details
+{
+    margin: auto auto 10px 20px;
+}
+.schedule-details:nth-of-type(even)
+{
+    border-left: 3px solid #9bdd7c;
+}
+.schedule-details:nth-of-type(odd)
+{
+    border-left: 3px solid blue;
+}

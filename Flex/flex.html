@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="google" content="notranslate">
+</head>
+<body>
+    <div id="flex-container">
+        <div class="flex-item"><p>Item 1</p></div>
+        <div class="flex-item"><p>Item 2</p></div>
+        <div class="flex-item"><p>Item 3</p></div>
+        <div class="flex-item"><p>Item 4</p></div>
+        <div class="flex-item"><p>Item 5</p></div>
+        <div class="flex-item"><p>Item 6</p></div>
+    </div>
+</body>
+<style>
+    body
+    {
+        background-color: lightgray;
+        color: white;
+    }
+
+    #flex-container
+    {
+        background-color: white;
+        width: 50vw;
+        height: 50vh;
+        margin: 25vh 25vw;
+        border-radius: 10px;
+        /* flex properties */
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 25%;
+        justify-content: center;
+        align-content: center;
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+
+    .flex-item
+    {
+        height: 25%;
+        width: 25%;
+        background-color: royalblue;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+    }
+</style>
+</html>
