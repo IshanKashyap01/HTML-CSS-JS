@@ -1,15 +1,18 @@
-#board
+#graph
 {
-    width: 85%;
+    width: 90%;
     height: auto;
     border-radius: 25px;
     background-color: white;
-    margin-left: 50px;
+    place-self: center;
     padding: 10px;
 }
-#board img
+#graph img
 {
-    object-fit: cover;
     height: 100%;
     width: 100%;
+}
+h3
+{
+    font-size: x-large;
 }

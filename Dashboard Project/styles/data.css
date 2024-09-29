@@ -1,9 +1,12 @@
-.card-container
+@font-face {
+    font-family: ShortBaby;
+    src: url(../../multimedia/ShortBaby-Mg2w.ttf);
+}
+#card-container
 {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     font-family: ShortBaby;
 }
 .card
@@ -11,25 +14,45 @@
     height: 100px;
     width: 180px;
     border-radius: 20px;
-}
-.card i
-{
-    margin-left: 150px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    justify-items: start;
 }
 .card:hover
 {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
-.card-head
+.card i
+{
+    justify-self: end;
+    margin: 20px 20px 0px;
+}
+.card p
 {
     margin: 0;
-    margin-left: 10px;
+    padding: 0px 15px;
+}
+.card-head
+{
     font-size: 18px;
 }
 .card-data
 {
-    margin-top: 4px;
     font-size: 15px;
-    margin-left: 10px;
+}
+#card-1
+{
+    background-color: #ddefe0;
+}
+#card-2
+{
+    background-color: #f4ecdd;
+}
+#card-3
+{
+    background-color: #efdada;
+}
+#card-4
+{
+    background-color: #dee0ef;
 }

@@ -1,43 +1,43 @@
 #schedule
 {
     background-color: white;
-    margin-top: 80px;
-    margin-left: 70px;
+    align-self: center;
+    width: 90%;
     border-radius: 30px;
-    height: 450px;
-    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     max-height: 400px;
+    overflow-y: scroll;
 }
 #schedule-head
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-#schedule-head h3
-{
-    margin: 0px auto auto 20px;
-    font-weight: 600;
-    font-size: 25px;
-    padding-top: 0;
-}
-#schedule-head p
-{
-    margin: 0 20px auto auto;
-    font-weight: 400;
-    font-size: 15px;
 }
 .schedule-details
 {
-    margin: auto auto 10px 20px;
+    margin: 5px;
 }
 .schedule-details:nth-of-type(even)
 {
-    border-left: 3px solid #9bdd7c;
+    border-left: 3px solid lightgreen;
 }
 .schedule-details:nth-of-type(odd)
 {
     border-left: 3px solid blue;
+}
+.meet
+{
+    margin: 0px 0px 1px 10px;
+}
+.head
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.detail
+{
+    font-weight: 400;
+    color: #999999;
 }

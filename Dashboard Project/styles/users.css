@@ -1,19 +1,19 @@
 #users
 {
     display: grid;
-    place-items: center;
 }
 table
 {
+    place-self: center;
     width: 95%;
     border-collapse: collapse;
-    border-radius: 20px;
     background-color: white;
+    border-radius: 20px;
 }
 th, td
 {
-    padding: 15px 100px;
     text-align: left;
+    padding: 15px 100px;
 }
 th
 {
