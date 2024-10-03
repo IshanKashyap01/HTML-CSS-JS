@@ -1,0 +1,96 @@
+header
+{
+    background-color: white;
+    padding: 1rem 0.5rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header figure
+{
+    width: 7.5rem;
+    height: 2.5rem;
+    margin: 0;
+}
+header img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header nav
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+header form
+{
+    align-self: center;
+}
+header a
+{
+    background-color: royalblue;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.6rem 0.75rem 0rem;
+    margin: 0 2cqi;
+}
+input, button
+{
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem;
+}
+input
+{
+    background-color: rgb(237, 236, 236);
+}
+button
+{
+    background-color: rgb(252, 172, 24);
+    color: white;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        row-gap: 1rem;
+    }
+    header figure
+    {
+        width: 35%;
+        height: 35%;
+        margin: 1rem 0 0;
+    }
+    header form
+    {
+        display: grid;
+        width: 100%;
+        height: 1.75rem;
+        grid-template-columns: 4fr 1fr;
+        gap: 0.75rem;
+    }
+    header nav
+    {
+        width: 80%;
+    }
+    header a
+    {
+        padding: 0.5rem;
+    }
+}
+@media screen and (orientation: landscape)
+{
+    input
+    {
+        width: 20rem;
+    }
+}
