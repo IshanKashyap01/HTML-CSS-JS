@@ -22,6 +22,10 @@ footer a
     text-decoration: none;
     padding: 0.625rem;
 }
+footer a:hover
+{
+    text-decoration: underline;
+}
 
 @media screen and (orientation: portrait)
 {
