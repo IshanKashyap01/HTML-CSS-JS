@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  backdrop-filter: brightness(90%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.box-1 {
+  background: linear-gradient(to right, #ffc3a0, #ffafbd);
+  animation: slide-and-scale 2s ease-out infinite;
+}
+
+.box-2 {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+.box-3 {
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+}
+
+@keyframes slide-and-scale
+{
+  from
+  {
+    transform: translateX(0);
+  }
+  33%
+  {
+    transform: translate(300px)
+  }
+  66%
+  {
+    transform: scale(1.5) scale(1);
+    animation-delay: 1s;
+  }
+  to
+  {
+    transform: translate(0);
+  }
+}
