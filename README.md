@@ -41,6 +41,14 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Dashboard Project](Dashboard%20Project/)
 
+### Week 5
+
+1. [Responsive Design](Responsive%20Design/)
+
+2. [Animations](Animations/)
+
+3. [Bootstrap](Bootstrap/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
