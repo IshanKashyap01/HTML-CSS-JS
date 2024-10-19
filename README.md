@@ -49,6 +49,12 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Bootstrap](CSS/Bootstrap/)
 
+### Week 6
+
+1. [Capstone Project](Projects/Capstone%20Project/)
+
+2. [SASS and SCSS](Projects/SASS%20and%20SCSS/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
