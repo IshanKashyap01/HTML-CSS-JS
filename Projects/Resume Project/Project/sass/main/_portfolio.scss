@@ -1,0 +1,78 @@
+@use '../mixins';
+
+#portfolio
+{
+    width: 80%;
+    section
+    {
+        @include mixins.flex-layout(row, wrap);
+        justify-content: space-between;
+        justify-items: center;
+        gap: 3rem 1rem;
+        figure
+        {
+            @include mixins.dimensions(20rem, auto);
+            margin: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            div
+            {
+                @include mixins.dimensions(100%);
+                background-color: rgba(white, 0);
+                transition: background-color 0.5s ease-in;
+                p
+                {
+                    color: rgba(white, 0);
+                    @include mixins.dimensions(100%);
+                    font-size: 2rem;
+                    font-weight: normal;
+                    text-align: center;
+                    padding: 3rem 0;
+                    transition: color 0.2s 0.2s ease;
+                    &:hover
+                    {
+                        color: rgba(white, 1);
+                    }
+                }
+                &:hover
+                {
+                    background-color: rgba(gray, 0.4);
+                    box-shadow: 0px 0px 1rem skyblue;
+                }
+            }
+        }
+        figure:nth-of-type(1)
+        {
+            background-image: url(images/codezen_2.png);
+        }
+        figure:nth-of-type(2)
+        {
+            background-image: url(images/project_2.jpeg);
+        }
+        figure:nth-of-type(3)
+        {
+            background-image: url(images/project.jpeg);
+        }
+        figure:nth-of-type(4)
+        {
+            background-image: url(images/project_3.png);
+        }
+        figure:nth-of-type(5)
+        {
+            background-image: url(images/codezen.png);
+        }
+        figure:nth-of-type(6)
+        {
+            background-image: url(images/tree.jpeg);
+        }
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #portfolio figure
+    {
+        @include mixins.dimensions(auto);
+    }
+}

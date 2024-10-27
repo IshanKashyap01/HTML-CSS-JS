@@ -1,0 +1,42 @@
+@use '../mixins';
+
+nav
+{
+    @include mixins.flex-layout(row, wrap);
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+#navbar
+{
+    padding-top: 2rem;
+    a
+    {
+        margin: 0 1rem;
+        text-decoration: none;
+        font-size: larger;
+        transition: color 0.5s, border-bottom 4s;
+        &:hover
+        {
+            color: lightgray;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+#social-links
+{
+    margin-top: 1.5rem;
+    a
+    {
+        padding: 0 0.75rem;
+        i
+        {
+            border-radius: 50%;
+            padding: 0.625rem;
+            &:hover
+            {
+                box-shadow: 0 0 6px 4px rgba(230, 196, 196, 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../mixins';
+@use '../variables';
+
+#about
+{
+    height: auto;
+    p
+    {
+        width: 50%;
+        margin: 3rem auto;
+        em
+        {
+            color: variables.$blue;
+            font-style: inherit;
+            font-weight: 800;
+        }
+    }
+}

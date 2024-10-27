@@ -1,0 +1,8 @@
+@use '../mixins';
+@use '../variables';
+
+#experience
+{
+    @include mixins.flex-layout(column);
+    align-items: center;
+}

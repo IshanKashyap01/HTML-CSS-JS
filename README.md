@@ -55,6 +55,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [SASS and SCSS](Projects/SASS%20and%20SCSS/)
 
+3. [Resume Project](Projects/Resume%20Project/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
