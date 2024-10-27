@@ -1,0 +1,14 @@
+@use '../mixins';
+
+#categories
+{
+    @include mixins.flex-layout(row, wrap);
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    .category
+    {
+        @include mixins.dimension(10rem, 10rem);
+        text-align: center;
+        margin: 0;
+    }
+}

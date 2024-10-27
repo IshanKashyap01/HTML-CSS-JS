@@ -1,0 +1,80 @@
+@use '../variables';
+@use '../mixins';
+
+#skills
+{
+    @include mixins.flex-layout(column);
+    row-gap: 1rem;
+    align-items: center;
+    section
+    {
+        width: 70%;
+        @include mixins.flex-layout(row, wrap);
+        justify-content: space-around;
+    }
+}
+// Skill Progress
+.skill-progress
+{
+    @include mixins.dimensions(7rem, 1.4rem);
+    background-color: lightgray;
+    color: white;
+    border-radius: 0.8rem;
+    .progress-bar
+    {
+        height: inherit;
+        border-radius: 20px 0 0 20px;
+        .skill-name
+        {
+            padding: 0.2rem 0.5rem;
+        }
+    }
+}
+#cpp, #java
+{
+    background-color: variables.$blue;
+}
+#html, #ios
+{
+    background-color: variables.$orange;
+}
+#css, #nodejs
+{
+    background-color: variables.$dark-pink;
+}
+#js, #android
+{
+    background-color: variables.$green;
+}
+#cpp
+{
+    width: 85%;
+}
+#html
+{
+    width: 90%;
+}
+#css
+{
+    width: 85%;
+}
+#js
+{
+    width: 35%;
+}
+#java
+{
+    width: 90%;
+}
+#android
+{
+    width: 40%;
+}
+#ios
+{
+    width: 30%;
+}
+#nodejs
+{
+    width: 75%;
+}

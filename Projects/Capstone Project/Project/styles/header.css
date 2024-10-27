@@ -1,0 +1,59 @@
+#header
+{
+    width: 100%;
+    background-color: rgb(116, 113, 113);
+}
+#header div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+#header img
+{
+    height: 5rem;
+    border-radius: 50%;
+}
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+nav a
+{
+    color: white;
+}
+nav a:first-of-type, nav a:hover
+{
+    color: var(--link-color);
+}
+#header .hamburger-menu
+{
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    #header img
+    {
+        height: 4rem;
+    }
+    nav a
+    {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 580px)
+{
+    nav
+    {
+        display: none;
+    }
+    #header .hamburger-menu
+    {
+        display: block;
+        margin: 1rem 1rem 0 auto;
+    }
+}

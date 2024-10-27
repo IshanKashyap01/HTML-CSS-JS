@@ -1,0 +1,78 @@
+#banner
+{
+    background-image: url(../multimedia/banner-bg.jpg);
+    color: white;
+    margin: 2rem 0 2rem;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#banner h2
+{
+    font-weight: bold;
+}
+#banner em
+{
+    font-style: normal;
+}
+#banner em:first-of-type
+{
+    color: var(--secondary-color);
+}
+#banner em:last-of-type
+{
+    color: var(--primary-color);
+}
+#banner em:last-of-type::before
+{
+    content: "";
+    display: block;
+}
+.banner-nav
+{
+    overflow: visible;
+}
+.banner-nav a
+{
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s;
+    display: inline-block;
+}
+.banner-nav a:hover
+{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+.banner-nav a:first-of-type
+{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+.banner-nav a:last-of-type
+{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px)
+{
+    #banner h2
+    {
+        margin-bottom: 2rem;
+    }
+    #banner em:last-of-type::before
+    {
+        display: none;
+    }
+}
+@media (max-width: 480px)
+{
+    #banner
+    {
+        display: none;
+    }
+}

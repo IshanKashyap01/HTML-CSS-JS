@@ -1,0 +1,121 @@
+@use '../mixins';
+@use '../variables';
+
+.timeline
+{
+    position: relative;
+    width: 75%;
+}
+.timeline-box
+{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    margin: 5px;
+    text-align: right;
+    &::after
+    {
+        @include mixins.dimensions(0.5rem);
+        content: "";
+        position: absolute;
+        top: 29%;
+        right: -12.65%;
+        border-radius: 50%;
+        background-color: gray;
+        z-index: 1;
+    }
+    figure
+    {
+        float: left;
+        margin: 0;
+        margin-right: 0.5rem;
+        @include mixins.dimensions(3rem);
+        img
+        {
+            @include mixins.dimensions(100%);
+            object-fit: contain;
+        }
+    }
+    h3
+    {
+        color: variables.$blue;
+        font-weight: bold;
+        margin-bottom: 0.4rem;
+    }
+    .company
+    {
+        color: variables.$orange;
+        margin: 0;
+    }
+    .time
+    {
+        color: rgb(126, 126, 126);
+        margin: 0 0 0.5rem;
+    }
+    small
+    {
+        text-align: justify;
+    }
+}
+#timeline-divider
+{
+    @include mixins.dimensions(0, 75%);
+    position: absolute;
+    top: 10%;
+    border: 1px dashed #0096fa6b;
+    .timeline-traveller
+    {
+        position: sticky;
+        top: 25%;
+        transform: rotate(90deg);
+        color: variables.$blue;
+        font-size: 1.5rem;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .timeline-box
+    {
+        &::after
+        {
+            right: 0%;
+            left: -17%;
+        }
+        width: 90%;
+        text-align: justify;
+        h3, .company, .time
+        {
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) 
+{
+    .timeline-box
+    {
+        &:nth-child(2n)
+        {
+            left: 53%;
+            text-align: left;
+            p, h3
+            {
+                text-align: right;
+            }
+            &::after
+            {
+                left: -9%;
+            }
+        }
+        &::after
+        {
+            right: -12.65%;
+        }
+    }
+    #timeline-divider
+    {
+        left: 50%;
+    }
+}
