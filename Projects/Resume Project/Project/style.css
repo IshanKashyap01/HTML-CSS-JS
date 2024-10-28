@@ -36,7 +36,7 @@ nav {
 #header {
   height: auto;
   padding: 0 0 5rem;
-  background: url("images/macbook_mouse.jpg") center fixed;
+  background: url("../../../multimedia/macbook_mouse.jpg") center fixed;
   background-size: cover;
   opacity: 0.8;
   color: white;
@@ -295,22 +295,22 @@ nav {
   box-shadow: 0px 0px 1rem skyblue;
 }
 #portfolio section figure:nth-of-type(1) {
-  background-image: url(images/codezen_2.png);
+  background-image: url(../../../multimedia/codezen_2.png);
 }
 #portfolio section figure:nth-of-type(2) {
-  background-image: url(images/project_2.jpeg);
+  background-image: url(../../../multimedia/project_2.jpeg);
 }
 #portfolio section figure:nth-of-type(3) {
-  background-image: url(images/project.jpeg);
+  background-image: url(../../../multimedia/project.jpeg);
 }
 #portfolio section figure:nth-of-type(4) {
-  background-image: url(images/project_3.png);
+  background-image: url(../../../multimedia/project_3.png);
 }
 #portfolio section figure:nth-of-type(5) {
-  background-image: url(images/codezen.png);
+  background-image: url(../../../multimedia/codezen.png);
 }
 #portfolio section figure:nth-of-type(6) {
-  background-image: url(images/tree.jpeg);
+  background-image: url(../../../multimedia/tree.jpeg);
 }
 
 @media screen and (max-width: 600px) {
