@@ -2,7 +2,7 @@
 
 - In HTML, all elements are enclosed in a box which consists of the following:
 
-    ![image of the box](../multimedia/box.png)
+    ![image of the box](../../multimedia/box.png)
 
 - **Padding** is the space b/w an element and its border
 
