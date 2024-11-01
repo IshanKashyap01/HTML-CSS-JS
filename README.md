@@ -61,6 +61,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 1. [Getting Started with JavaScript](JS/Getting%20Started%20with%20JavaScript/)
 
+2. [Fundamentals of JS I](JS/Fundamentals%20of%20JS%20I/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
