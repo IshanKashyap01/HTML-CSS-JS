@@ -65,6 +65,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Fundamentals of JS II](JS/Fundamentals%20of%20JS%20II/)
 
+4. [Arrays, Strings and Function](JS/Arrays,%20Strings%20and%20Function/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
