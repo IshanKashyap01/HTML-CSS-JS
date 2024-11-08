@@ -57,6 +57,16 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Resume Project](Projects/Resume%20Project/)
 
+### Week 7
+
+1. [Getting Started with JavaScript](JS/Getting%20Started%20with%20JavaScript/)
+
+2. [Fundamentals of JS I](JS/Fundamentals%20of%20JS%20I/)
+
+3. [Fundamentals of JS II](JS/Fundamentals%20of%20JS%20II/)
+
+4. [Arrays, Strings and Function](JS/Arrays,%20Strings%20and%20Function/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
