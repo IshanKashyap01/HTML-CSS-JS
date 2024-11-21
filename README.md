@@ -71,6 +71,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 1. [Working of JS](JS/Working%20of%20JS/)
 
+2. [Functions in JS](JS/Functions%20in%20JS/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
