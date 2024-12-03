@@ -73,6 +73,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [Functions in JS](JS/Functions%20in%20JS/)
 
+3. [OOP in JS](JS/OOP%20in%20JS/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
