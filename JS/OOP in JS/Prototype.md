@@ -29,25 +29,28 @@ of objects created from it
 other objects using their prototype
 
 ```js
-Game.prototype.printTitle = () => console.log(this.title)
+Game.prototype.printTitle = function(){
+    console.log(this.title)
+}
 ```
 
 - Using the `prototype` property, we can add new methods or properties to an
 existing constructor
 
-- Moreover, these properties will not be copied into the prototype of the objects
+- Moreover, these properties will *not be copied directly* into of the objects
 created from this constructor
 
-- Instead, they will be available through inheritance
+- Instead, they will be in their *prototype* available through inheritance
 
-- This decreases memory usage by shortening the prototypes of objects
+- This decreases memory usage by shortening the objects' list of properties
 
 ## Prototype Chaining
 
-- Instead of classes, JS relies on *prototype chain* for inheritance
+Instead of classes, JS relies on *prototype chain* for inheritance
 
-- Suppose a class `A` inherits from class `B`; `A`'s prototype refers `B` while
-`B`'s prototype refers to `Object`
+- Suppose a class `A` inherits from class `B`
+
+- Here, `A`'s prototype refers `B` while `B`'s prototype refers to `Object`
 
 - Therefore, `A` inherits from `B` as well as the `Object` class
 
