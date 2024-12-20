@@ -67,6 +67,16 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 4. [Arrays, Strings and Function](JS/Arrays,%20Strings%20and%20Function/)
 
+### Week 8
+
+1. [Working of JS](JS/Working%20of%20JS/)
+
+2. [Functions in JS](JS/Functions%20in%20JS/)
+
+3. [OOP in JS](JS/OOP%20in%20JS/)
+
+4. [ES6 Classes](JS/ES6%20Classes/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
