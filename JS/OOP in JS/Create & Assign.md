@@ -18,8 +18,6 @@ a new object and returns it
 
 - However, it does not create a deep copy of the properties
 
-- Therefore, changes in one object's properties will reflect in the other as well
-
 ## Assign
 
 ```js
