@@ -77,6 +77,10 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 4. [ES6 Classes](JS/ES6%20Classes/)
 
+### Week 9
+
+1. [DOM Manipulation](JS/DOM%20Manipulation/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
