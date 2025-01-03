@@ -81,6 +81,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 1. [DOM Manipulation](JS/DOM%20Manipulation/)
 
+2. [JS Practice](Projects/JS%20Practice/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
