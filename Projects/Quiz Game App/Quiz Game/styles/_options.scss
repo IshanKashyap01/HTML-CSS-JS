@@ -1,0 +1,52 @@
+@use 'variables';
+@use 'mixins';
+
+#options
+{
+    @include mixins.flex(column);
+    @include mixins.background(variables.$bg-gray, 0.5rem);
+    width: 100%;
+    padding: 0.75rem 0;
+    row-gap: 1rem;
+    align-items: center;
+
+    .options
+    {
+        @include mixins.background(variables.$text-white, 0.25rem);
+        border: none;
+        outline: none;
+        box-shadow: 0 0 3px rgba(3, 3, 3, 0.8);
+        width: 75%;
+        padding: 0.55rem 0;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover
+        {
+            transition: background-color 0.25s ease-out;
+            background-color: variables.$orange;
+        }
+    }
+}
+
+#score
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#next
+{
+    @include mixins.background(variables.$bg-blue, 1.25rem);
+    color: variables.$text-white;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    align-self: flex-end;
+    cursor: pointer;
+    &:hover
+    {
+        transition: background-color 0.25s ease-out;
+        background-color: variables.$hover-blue;
+    }
+}

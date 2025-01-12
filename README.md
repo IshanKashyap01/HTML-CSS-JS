@@ -83,6 +83,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [JS Practice](Projects/JS%20Practice/)
 
+3. [Quiz Game App](Projects/Quiz%20Game%20App/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
