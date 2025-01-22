@@ -85,6 +85,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 3. [Quiz Game App](Projects/JS/Quiz%20Game%20App/)
 
+4. [Mini Project - Music Player App](Projects/JS/Music%20Player%20App/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)

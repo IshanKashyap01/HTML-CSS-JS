@@ -1,0 +1,41 @@
+@use '../util/mixins';
+@use '../util/variables';
+
+.switch-container
+{
+    @include mixins.dimensions(4rem, 1.75rem);
+    display: inline-block;
+    position: relative;
+    align-self: flex-end;
+    .slider
+    {
+        @include mixins.background(gray, 2rem);
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+        &::before
+        {
+            @include mixins.dimensions(1.75rem, 1.75rem);
+            @include mixins.background(white, 50%);
+            position: absolute;
+            content: '';
+            transition: all 0.4s;
+        }
+    }
+    #theme-switch
+    {
+        display: none;
+        &:checked + .slider::before
+        {
+            background-color: lightgray;
+        }
+        &:checked + .slider
+        {
+            background-color: variables.$blue;
+        }        
+        &:checked + .slider:before 
+        {
+            transform: translateX(2.25rem) rotate(1turn);
+        }
+    }
+}

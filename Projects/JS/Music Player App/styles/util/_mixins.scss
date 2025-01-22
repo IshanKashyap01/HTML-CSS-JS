@@ -1,0 +1,28 @@
+@use 'variables';
+
+@mixin dimensions($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+@mixin background($bg-color, $border-radius)
+{
+    background-color: $bg-color;
+    border-radius: $border-radius;
+}
+@mixin flex($direction: row, $wrap: nowrap)
+{
+    display: flex;
+    flex-flow: $direction $wrap;
+}
+@mixin item
+{
+    @include background(var(--item-bg-color), 0.25rem);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s; 
+    &:hover
+    {
+        background-color: var(--card-bg-color);
+    }
+}

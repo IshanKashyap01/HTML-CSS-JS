@@ -1,0 +1,32 @@
+$magenta: rgb(116, 0, 116);
+$purple: rgb(173, 97, 255);
+
+$light-blue: #30b4e4;
+$blue: #3087e4;
+$dark-blue: #347cca;
+
+$light-black: rgb(86, 86, 86);
+$black: rgb(114, 114, 114);
+$dark-black: rgb(52, 52, 52);
+
+:root
+{
+    --body-bg-color: white;
+    --card-bg-color: #{$light-blue};
+    --drop-shadow-color: #{$magenta};
+    --item-bg-color: #{$blue};
+    --figure-bg-color: #{$dark-blue};
+    --text-color: black;
+    --placeholder-color: gray;
+}
+
+[data-theme='dark']
+{
+    --body-bg-color: #{$light-black};
+    --card-bg-color: #{$dark-black};
+    --drop-shadow-color: #{$black};
+    --item-bg-color: gray;
+    --figure-bg-color: gray;
+    --text-color: white;
+    --placeholder-color: lightgray;
+}

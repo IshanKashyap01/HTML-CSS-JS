@@ -1,0 +1,38 @@
+@use '../util/mixins';
+@use '../util/variables';
+@use 'playlists';
+@use 'player';
+@use 'songs';
+
+.card
+{
+    @include mixins.background(var(--card-bg-color), 0.5rem);
+    @include mixins.flex(column);
+    row-gap: 1rem;
+    padding: 1rem;
+    filter: drop-shadow(-1px -1px 3px var(--drop-shadow-color));
+}
+.playlist, .song
+{
+    @include mixins.item;
+    overflow-x: hidden;
+}
+.playlist
+{
+    width: 75%;
+}
+.song
+{
+    width: 80%;
+    text-align: left;
+}
+.form
+{
+    @include mixins.flex;
+    column-gap: 1rem;
+}
+.item-list
+{
+    @include mixins.flex(column);
+    row-gap: 1rem;
+}

@@ -1,0 +1,40 @@
+@use '../util/variables';
+@use '../util/mixins';
+
+#player
+{
+    align-items: center;
+    figure
+    {
+        @include mixins.flex(column);
+        @include mixins.dimensions(400px, 300px);
+        margin: 0;
+        background-color: var(--figure-bg-color);
+        justify-content: space-between;
+        img
+        {
+            @include mixins.dimensions(100%, 70%);
+            max-height: 75%;
+            object-fit: cover;
+        }
+        flex: 1 1 1;
+    }
+    audio
+    {
+        width: 85%;
+    }
+    button
+    {
+        color: white;
+    }
+    #prev, #next
+    {
+        padding: 0.5rem 2rem;
+    }
+    #add
+    {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+    }
+}

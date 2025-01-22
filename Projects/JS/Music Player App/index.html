@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header id="header">
+        <label class="switch-container" for="theme-switch">
+            <input type="checkbox" name="theme" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+        <h1>Music Player</h1>
+    </header>
+    <section id="songs" class="card">
+        <div class="form">
+            <input type="search" name="song" id="song-input" placeholder="Enter Song Name...">
+            <button id="search-song">Search</button>
+        </div>
+        <section id="song-search-results" class="item-list"></section>
+        <div id="filter-songs" class="form">
+            <label for="filter">Filter by genre:</label>
+            <select name="genre" id="filter">
+                <option value="all" selected>All</option>
+                <option value="hip hop">Hip Hop</option>
+                <option value="pop">Pop</option>
+            </select>
+        </div>
+        <section id="song-list" class="item-list">
+            <h2>All Songs:</h2>
+        </section>
+    </section>
+    <main id="player" class="card">
+        <figure class="card">
+            <img id="cover" src="" alt="">
+            <figcaption>
+                <h2 id="title">Title</h2>
+                <p id="artist">Artist</p>
+            </figcaption>
+        </figure>
+        <audio src="" controls></audio>
+        <div id="player-buttons">
+            <button id="prev"><=</button>
+            <button id="next">=></button>
+            <button id="add">Add to Playlist</button>
+        </div>
+    </main>
+    <section id="playlists-container">
+        <div class="form">
+            <input type="text" name="playlist" id="playlist-name" placeholder="Enter Playlist Name...">
+            <button id="create-playlist">Create Playlist</button>
+        </div>
+        <section id="playlists" class="card">
+            <div class="form">
+                <input type="search" name="playlist" id="playlist-input" placeholder="Enter Playlist Name...">
+                <button id="search-playlist">Search</button>
+            </div>
+            <section id="playlist-search-results" class="item-list"></section>
+            <div id="queue" class="item-list">
+                <h2>Current Playlist</h2>
+            </div>
+            <div id="all-playlists" class="item-list">
+                <h2>All Playlists</h2>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
