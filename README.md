@@ -87,6 +87,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 4. [Mini Project - Music Player App](Projects/JS/Music%20Player%20App/)
 
+5. [Asynchronous JavaScript - I](JS/Asynchronous%20JavaScript%20-%20I/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
