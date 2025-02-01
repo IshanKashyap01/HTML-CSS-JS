@@ -1,0 +1,20 @@
+@use 'variables';
+
+header
+{
+    text-align: center;
+}
+h1
+{
+    color: variables.$text-black;
+}
+#question
+{
+    color: variables.$text-white;
+    background-color: variables.$orange;
+    font-weight: normal;
+    font-size: 1.35rem;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
+}

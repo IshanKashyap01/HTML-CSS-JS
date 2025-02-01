@@ -1,0 +1,13 @@
+#footer
+{
+    background-color: var(--dark-bg-color);
+    color: white;
+    padding: 1rem 0 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: larger;
+}
+#footer span
+{
+    color: var(--primary-color);
+}

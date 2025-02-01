@@ -1,0 +1,29 @@
+@use '../mixins';
+
+#discounts
+{
+    @include mixins.grid-layout(repeat(3, 1fr));
+    @include mixins.justify-layout(space-between);
+    .discount
+    {
+        margin: 0;
+        @include mixins.dimension(95%, auto);
+        img
+        {
+            @include mixins.dimension(100%, 100%);
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #discounts
+    {
+        @include mixins.flex-layout(row, wrap);
+        .discount
+        {
+            width: 100%;
+        }
+    }
+}

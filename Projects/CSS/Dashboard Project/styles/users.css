@@ -1,0 +1,30 @@
+#users
+{
+    display: grid;
+}
+table
+{
+    place-self: center;
+    width: 95%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 20px;
+}
+th, td
+{
+    text-align: left;
+    padding: 15px 100px;
+}
+th
+{
+    background-color: #a39696;
+    font-weight: 600;
+}
+tr:nth-child(even)
+{
+    background-color: #f9f9f9;
+}
+tr:hover
+{
+    background-color: #eaeaea;
+}

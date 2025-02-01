@@ -1,0 +1,17 @@
+@use 'header';
+@use 'options';
+@use 'mixins';
+@use 'variables';
+
+body
+{
+    font-family: "Times New Roman", Times, serif;
+    background-color: variables.$bg-white;
+}
+main
+{
+    @include mixins.flex(column);
+    margin: auto;
+    width: 40%;
+    align-items: center;
+}

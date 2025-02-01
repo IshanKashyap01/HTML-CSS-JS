@@ -1,7 +1,0 @@
-@use '../mixins';
-
-#education
-{
-    @include mixins.flex-layout(column);
-    align-items: center;
-}

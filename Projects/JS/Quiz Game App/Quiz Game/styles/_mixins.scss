@@ -1,0 +1,11 @@
+@mixin flex($direction: row)
+{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin background($bg-color, $border-radius)
+{
+    background-color: $bg-color;
+    border-radius: $border-radius;
+}

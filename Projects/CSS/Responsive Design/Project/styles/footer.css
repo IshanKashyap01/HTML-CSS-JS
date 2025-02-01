@@ -1,0 +1,50 @@
+footer
+{
+    background-color: rgba(17, 15, 15, 0.87);
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 0.625rem 2.50rem;
+}
+footer section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h3
+{
+    color: gray;
+}
+footer a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem;
+}
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+@media screen and (orientation: portrait)
+{
+    footer
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+}

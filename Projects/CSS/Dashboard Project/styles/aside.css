@@ -1,0 +1,50 @@
+aside
+{
+    background-color: black;
+    color: white;
+    height: 90vh;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: wrap column;
+    gap: 10px;
+    position: sticky;
+    top: 20px;
+}
+/* Profile Pic */
+#profile
+{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    margin: 10px;
+    font-size: x-large;
+}
+#profile img
+{
+    width: 60%;
+    height: 75%;
+    border-radius: 50%;
+}
+/* Nav Bar */
+nav
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.nav:hover
+{
+    color: gold;
+}
+nav a
+{
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: lightgray;
+}

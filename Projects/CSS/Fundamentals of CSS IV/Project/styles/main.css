@@ -1,0 +1,17 @@
+/* Main section */
+main
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-attachment: fixed;
+    backdrop-filter: brightness(70%);
+}
+/* h2 headings */
+#headings
+{
+    padding-top: 15px;
+    margin-top: 0;
+    position: sticky;
+    top: 70px;
+}

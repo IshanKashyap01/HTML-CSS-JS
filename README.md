@@ -21,7 +21,7 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 1. [Semantics](HTML/Semantics/)
 
-2. [HTML Project](Projects/HTML%20Project/)
+2. [HTML Project](Projects/HTML/HTML%20Project/)
 
 3. [Fundamentals of CSS I](CSS/Fundamentals%20of%20CSS%20I/)
 
@@ -31,7 +31,7 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [Fundamentals of CSS III](CSS/Fundamentals%20of%20CSS%20III/)
 
-3. [Fundamentals of CSS IV](Projects/Fundamentals%20of%20CSS%20IV/)
+3. [Fundamentals of CSS IV](Projects/CSS/Fundamentals%20of%20CSS%20IV/)
 
 ### Week 4
 
@@ -39,11 +39,11 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [Grid](CSS/Grid/)
 
-3. [Dashboard Project](Projects/Dashboard%20Project/)
+3. [Dashboard Project](Projects/CSS/Dashboard%20Project/)
 
 ### Week 5
 
-1. [Responsive Design](Projects/Responsive%20Design/)
+1. [Responsive Design](Projects/CSS/Responsive%20Design/)
 
 2. [Animations](CSS/Animations/)
 
@@ -51,11 +51,11 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 ### Week 6
 
-1. [Capstone Project](Projects/Capstone%20Project/)
+1. [Capstone Project](Projects/CSS/Capstone%20Project/)
 
-2. [SASS and SCSS](Projects/SASS%20and%20SCSS/)
+2. [SASS and SCSS](Projects/CSS/SASS%20and%20SCSS/)
 
-3. [Resume Project](Projects/Resume%20Project/)
+3. [Resume Project](Projects/CSS/Resume%20Project/)
 
 ### Week 7
 
@@ -76,6 +76,18 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 3. [OOP in JS](JS/OOP%20in%20JS/)
 
 4. [ES6 Classes](JS/ES6%20Classes/)
+
+### Week 9
+
+1. [DOM Manipulation](JS/DOM%20Manipulation/)
+
+2. [JS Practice](Projects/JS/JS%20Practice/)
+
+3. [Quiz Game App](Projects/JS/Quiz%20Game%20App/)
+
+4. [Mini Project - Music Player App](Projects/JS/Music%20Player%20App/)
+
+5. [Asynchronous JavaScript - I](JS/Asynchronous%20JavaScript%20-%20I/)
 
 ---
 

@@ -1,0 +1,16 @@
+@use '../mixins';
+@use '../variables';
+
+header
+{
+    nav
+    {
+        @include mixins.flex-layout;
+        column-gap: 2cqi;
+        a
+        {
+            @include mixins.color(royalblue, variables.$text-secondary-color);
+            padding: 0.6rem 0.75rem;
+        }
+    }
+}

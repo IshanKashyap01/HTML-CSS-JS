@@ -1,0 +1,11 @@
+@use '../util/mixins';
+
+#playlists-container
+{
+    @include mixins.flex(column);
+    row-gap: 1rem;
+    #playlists
+    {
+        height: 100%;
+    }
+}

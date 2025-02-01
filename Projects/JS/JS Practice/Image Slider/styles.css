@@ -1,0 +1,53 @@
+/* 
+   This is a scaffold CSS file for the image carousel project.
+   You'll need to add styles here to create an attractive and functional carousel.
+   Consider styling elements such as:
+   - The main container for the carousel
+   - The image display area
+   - The navigation buttons (previous and next)
+   
+
+   Remember to use appropriate selectors to target your HTML elements,
+   and feel free to be creative with colors, layouts, and transitions!
+*/
+body
+{
+   background-color: lightgray;
+   margin: auto;
+   height: 90vh;
+   width: 90vw;
+}
+#carousel-container, #carousel, img
+{
+    height: 100%;
+    width: 100%;
+}
+#carousel
+{
+    margin: auto;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+figure
+{
+    height: 50vh;
+    width: 50vw;
+    margin: 0 1rem ;
+}
+.button
+{
+    font-size: 1.5rem;
+}
+.button:hover
+{
+    color: grey;
+}
+.button:active
+{
+    color: white;
+}
+img
+{
+    object-fit: cover;
+}

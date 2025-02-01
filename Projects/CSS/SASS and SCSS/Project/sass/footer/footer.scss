@@ -1,0 +1,46 @@
+@use '../mixins';
+@use '../variables';
+
+footer
+{
+    background-color: rgba(17, 15, 15, 0.87);
+    padding: 1rem 1rem 1.5rem;
+    @include mixins.flex-layout;
+    @include mixins.justify-layout;
+    section
+    {
+        @include mixins.flex-layout(column);
+        align-items: center;
+        row-gap: 1.5rem;
+        h3
+        {
+            color: grey;
+        }
+        a
+        {
+            color: variables.$text-secondary-color;
+            text-decoration: none;
+            &:hover
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (orientation: portrait)
+{
+    footer
+    {
+        @include mixins.grid-layout(1fr 1fr);
+        @include mixins.justify-layout;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        @include mixins.flex-layout(column);
+    }
+}
