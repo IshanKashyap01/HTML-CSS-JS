@@ -8,11 +8,13 @@
 
     1. JavaScript Engine
 
-    2. Web API
+    2. Web API Environment
 
-    3. Callback Queue
+    3. Callback/Task Queue
 
-    4. Event loop
+    4. Microtask Queue
+
+    5. Event loop
 
 ## JS Engine
 

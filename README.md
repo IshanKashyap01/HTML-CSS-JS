@@ -89,6 +89,10 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 5. [Asynchronous JavaScript - I](JS/Asynchronous%20JavaScript%20-%20I/)
 
+### Week 10
+
+1. [Asynchronous JavaScript - II](JS/Asynchronous%20JavaScript%20-%20II/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)
