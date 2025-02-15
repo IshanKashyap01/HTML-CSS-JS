@@ -1,0 +1,49 @@
+/* 
+   Welcome to style.css!
+
+   Here's what you need to do:
+
+   1. Style the question-container div
+   2. Make the question text stand out
+   3. Style the stop-button
+   4. Add styles for the 'stopped' class on the button
+      (This class is added when the button is clicked)
+
+   Remember:
+   - The 'stopped' class should change the button's appearance
+   - The button should look different when it's disabled
+
+   Have fun styling your question viewer app!
+*/
+body
+{
+   background-color: #e3e3e3;
+}
+.question-container
+{
+   margin: 30vh 25vw 0;
+   background-color: white;
+   text-align: center;
+   padding: 1rem;
+}
+#display
+{
+   font-size: large;
+}
+.controls
+{
+   margin-top: 1rem;
+}
+.stop-button
+{
+   padding: 0.5rem 0.75rem;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   background-color: red;
+}
+.stopped
+{
+   background-color: gray;
+}
