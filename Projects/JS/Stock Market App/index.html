@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Market Analysis</h1>
+    </header>
+    <!-- Line chart of the stock selected and buttons for range adjustment -->
+    <main class="chart">
+        <canvas></canvas>
+        <div class="range">
+            <button class="button">1 Month</button>
+            <button class="button">3 Month</button>
+            <button class="button">1 Year</button>
+            <button class="button">5 Year</button>
+        </div>
+    </main>
+    <!-- List of stocks to select -->
+    <aside class="stock-list"></aside>
+    <!-- Summary of the stock selected -->
+    <footer class="summary">
+        <header>
+            <span id="name"></span>
+            <span id="profit"></span>
+            <span id="book-value"></span>
+        </header>
+        <main>
+            <p id="summary"></p>
+        </main>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

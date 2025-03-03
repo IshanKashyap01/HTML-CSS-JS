@@ -95,6 +95,8 @@ This is a 6 week course containing basics of HTML, CSS and Javascript including
 
 2. [Modules in JS](JS/Modules%20in%20JS/)
 
+3. [Mini Project - Stock Market App](Projects/JS/Stock%20Market%20App/)
+
 ---
 
 *Note*: [*Commit tags*](<https://bit.ly/commit-message-tags>)

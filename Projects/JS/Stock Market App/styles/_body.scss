@@ -1,0 +1,18 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: rgb(1, 1, 42);
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    header
+    {
+        grid-column: span 2;
+        h1
+        {
+            text-align: center;
+            margin: 0 0 1.25rem;
+        }
+    }
+}

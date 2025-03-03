@@ -1,0 +1,24 @@
+@use 'mixins';
+
+.chart
+{
+    background-color: rgb(1, 1, 69);
+    @include mixins.flex(column);
+    row-gap: 1rem;
+    .range
+    {
+        align-self: center;
+        width: 50%;
+        margin-bottom: 0.5rem;
+        @include mixins.flex;
+        justify-content: space-evenly;
+        .button
+        {
+            all: unset;
+            background-color: rgb(2, 2, 116);
+            color: white;
+            font-size: larger;
+            cursor: pointer;
+        }
+    }
+}
