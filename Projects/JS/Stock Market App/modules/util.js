@@ -13,3 +13,22 @@ export async function getJSONFromServer(url)
     }
     return response.json()
 }
+/**
+ * Creates an HTML element of the given type with the given classes and text
+ * @param {String} tag name of the HTML element
+ * @param {String} classList space separated list of classes
+ * @param {String} textContent text inside the element
+ */
+export function createElement(tag, classList = '', textContent = '')
+{
+    const element = document.createElement(tag)
+    if(classList !== '')
+    {
+        element.setAttribute('class', classList)
+    }
+    if(textContent !== '')
+    {
+        element.textContent = textContent
+    }
+    return element
+}

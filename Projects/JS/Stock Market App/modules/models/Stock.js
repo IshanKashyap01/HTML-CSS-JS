@@ -54,7 +54,7 @@ export class Stock
     }
     set profit(profit)
     {
-        this.#profit = profit
+        this.#profit = Math.round(profit * 100) / 100
     }
     get summary()
     {
