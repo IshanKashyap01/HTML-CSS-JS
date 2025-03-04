@@ -4,9 +4,13 @@
 {
     background-color: rgb(1, 1, 69);
     @include mixins.flex(column);
-    row-gap: 1rem;
+    canvas
+    {
+        flex-grow: 1;
+    }
     .range
     {
+        flex-grow: 0;
         align-self: center;
         width: 50%;
         margin-bottom: 0.5rem;
@@ -19,6 +23,8 @@
             color: white;
             font-size: larger;
             cursor: pointer;
+            border-radius: 1.25rem;
+            padding: 0 0.5rem;
         }
     }
 }

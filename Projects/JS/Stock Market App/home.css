@@ -24,9 +24,12 @@ body .loss {
   background-color: rgb(1, 1, 69);
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 1rem;
+}
+.chart canvas {
+  flex-grow: 1;
 }
 .chart .range {
+  flex-grow: 0;
   align-self: center;
   width: 50%;
   margin-bottom: 0.5rem;
@@ -40,6 +43,8 @@ body .loss {
   color: white;
   font-size: larger;
   cursor: pointer;
+  border-radius: 1.25rem;
+  padding: 0 0.5rem;
 }
 
 .stock-list {
@@ -66,7 +71,7 @@ body .loss {
   flex-flow: row nowrap;
   column-gap: 2rem;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.25rem;
   margin: 1rem 0;
 }
 .summary header .profit {
