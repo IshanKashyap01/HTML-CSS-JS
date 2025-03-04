@@ -31,7 +31,7 @@ const BOOK_VALUE_AND_PROFIT_API = 'https://stocksapi-uhe1.onrender.com/api/stock
  * @description
  * In the current version, stock summary can be accessed as:
  * 
- * `data['stocksProfileData'][stock.name]['summary']`
+ * `data['stocksProfileData'][0][stock.name]['summary']`
  */
 const STOCK_SUMMARY_API = 'https://stocksapi-uhe1.onrender.com/api/stocks/getstocksprofiledata'
 /**
@@ -110,7 +110,7 @@ export class StockDataLoader
         try
         {
             const data = await getJSONFromServer(STOCK_SUMMARY_API)
-            this.#stocks.forEach((stock) => stock.summary = data['stocksProfileData'][stock.name]['summary'])
+            this.#stocks.forEach((stock) => stock.summary = data['stocksProfileData'][0][stock.name]['summary'])
         }
         catch(error)
         {
