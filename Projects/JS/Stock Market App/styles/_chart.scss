@@ -12,10 +12,10 @@
     {
         flex-grow: 0;
         align-self: center;
-        width: 50%;
         margin-bottom: 0.5rem;
         @include mixins.flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        column-gap: 1.25rem;
         .button
         {
             all: unset;

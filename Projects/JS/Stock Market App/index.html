@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Analysis</title>
     <link rel="stylesheet" href="home.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -12,12 +14,12 @@
     </header>
     <!-- Line chart of the stock selected and buttons for range adjustment -->
     <main class="chart">
-        <canvas></canvas>
+        <canvas id="graph"></canvas>
         <div class="range">
-            <button class="button">1 Month</button>
-            <button class="button">3 Month</button>
-            <button class="button">1 Year</button>
-            <button class="button">5 Year</button>
+            <button id="one-month" class="button">1 Month</button>
+            <button id="three-months" class="button">3 Months</button>
+            <button id="one-year" class="button">1 Year</button>
+            <button id="five-years" class="button">5 Years</button>
         </div>
     </main>
     <!-- List of stocks to select -->

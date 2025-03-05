@@ -10,9 +10,9 @@ const STOCKS = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'PYPL', 'TSLA', 'JPM', 'NVDA', 
  * @description
  * In the current version, stock values and timestamps can be accessed as:
  * 
- * stock values: `data['stocksData'][stock.name][range]['value']`
+ * stock values: `data['stocksData'][0][stock.name][range]['value']`
  * 
- * timestamps: `data['stocksData'][stock.name][range]['timeStamp']`
+ * timestamps: `data['stocksData'][0][stock.name][range]['timeStamp']`
  * 
  */
 const CHARTS_DATA_API = 'https://stocksapi-uhe1.onrender.com/api/stocks/getstocksdata'
@@ -72,8 +72,8 @@ export class StockDataLoader
                 ]
                 for(const chart of charts)
                 {
-                    chart.values = data['stocksData'][stock.name][range]['value']
-                    chart.timestamps = data['stocksData'][stock.name][range]['timeStamp']
+                    chart.values = data['stocksData'][0][stock.name][chart.range]['value']
+                    chart.timestamps = data['stocksData'][0][stock.name][chart.range]['timeStamp']
                 }
                 stock.stockCharts = charts
             }
