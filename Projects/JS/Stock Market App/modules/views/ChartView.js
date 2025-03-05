@@ -9,6 +9,26 @@ export class ChartView
      * Canvas where the graph will be drawn
      */
     #canvas
+    /**
+     * Button representing the range for one month
+     * @type HTMLElement
+     */
+    oneMonth
+    /**
+     * Button representing the range for three months
+     * @type HTMLElement
+     */
+    threeMonths
+    /**
+     * Button representing the range for one year
+     * @type HTMLElement
+     */
+    oneYear
+    /**
+     * Button representing the range for five years
+     * @type HTMLElement
+     */
+    fiveYears
     constructor()
     {
         this.#canvas = document.querySelector('#graph')

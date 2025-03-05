@@ -1,6 +1,6 @@
 import { StockChart } from './StockChart.js'
 /**
- * 
+ * Represents a stock
  */
 export class Stock
 {
