@@ -35,6 +35,10 @@ const BOOK_VALUE_AND_PROFIT_API = 'https://stocksapi-uhe1.onrender.com/api/stock
  */
 const STOCK_SUMMARY_API = 'https://stocksapi-uhe1.onrender.com/api/stocks/getstocksprofiledata'
 /**
+ * Array containing all the time periods for stock data
+ */
+const RANGES = ['1mo', '3mo', '1y', '5y']
+/**
  * Loads stock data from the API
  */
 export class StockDataLoader
@@ -55,7 +59,7 @@ export class StockDataLoader
         return this.#stocks
     }
     /**
-     * Load chart data for all stocks
+     * Loads chart data for all stocks
      */
     async loadStockCharts()
     {
@@ -65,16 +69,8 @@ export class StockDataLoader
             let charts
             for(const stock of this.#stocks)
             {
-                charts = [new StockChart('1mo'),
-                    new StockChart('3mo'),
-                    new StockChart('1y'),
-                    new StockChart('5y')
-                ]
-                for(const chart of charts)
-                {
-                    chart.values = data['stocksData'][0][stock.name][chart.range]['value']
-                    chart.timestamps = data['stocksData'][0][stock.name][chart.range]['timeStamp']
-                }
+                charts = new Map()
+                RANGES.forEach((range) => charts.set(range, this.#createStockChart(range, data, stock.name)))
                 stock.stockCharts = charts
             }
         }
@@ -82,6 +78,20 @@ export class StockDataLoader
         {
             throw new Error(`${error.message}\nError loading graph data`)
         }
+    }
+    /**
+     * Creates a stock chart with range, prices and timestamps
+     * @param {String} range time period
+     * @param {Object} data data from API
+     * @param {String} name name of the company
+     * @returns a stock chart
+     */
+    #createStockChart(range, data, name)
+    {
+        const chart = new StockChart(range)
+        chart.prices = data['stocksData'][0][name][range]['value']
+        chart.timestamps = chart.timestamps = data['stocksData'][0][name][range]['timeStamp']
+        return chart
     }
     /**
      * Loads the book values and profits for all stocks

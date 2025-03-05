@@ -7,7 +7,7 @@ export class StockChart
     /**
      * Array of stock prices within a period
      */
-    #values
+    #prices
     /**
      * Array of corresponding timestamps
      */
@@ -19,18 +19,18 @@ export class StockChart
     constructor(range)
     {
         this.#range = range
-        this.#values = []
+        this.#prices = []
         this.#timestamps = []
     }
-    get values()
+    get prices()
     {
-        return this.#values
+        return this.#prices
     }
-    set values(values)
+    set prices(values)
     {
         if(Array.isArray(values) && values.length != 0)
         {
-            this.#values = values
+            this.#prices = values
         }
     }
     get timestamps()

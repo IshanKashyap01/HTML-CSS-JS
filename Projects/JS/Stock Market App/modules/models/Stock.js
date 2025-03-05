@@ -1,3 +1,7 @@
+import { StockChart } from './StockChart.js'
+/**
+ * 
+ */
 export class Stock
 {
     /**
@@ -21,7 +25,7 @@ export class Stock
     #summary
     /**
      * array of stock value vs timestamp data of the stock's history
-     * @type StockChart[]
+     * @type Map<String, StockChart>
      */
     #stockCharts
     /**
@@ -31,7 +35,7 @@ export class Stock
     constructor(name)
     {
         this.#name = name
-        this.#stockCharts = []
+        this.#stockCharts = new Map()
     }
     get name()
     {
@@ -70,9 +74,6 @@ export class Stock
     }
     set stockCharts(charts)
     {
-        if(Array.isArray(charts) && charts.length > 0)
-        {
-            this.#stockCharts = charts
-        }
+        this.#stockCharts = charts
     }
 }
