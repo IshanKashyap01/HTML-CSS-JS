@@ -44,7 +44,8 @@ const RANGES = ['1mo', '3mo', '1y', '5y']
 export class StockDataLoader
 {
     /**
-     * Array of {@link Stock} objects
+     * Map of {@link Stock} objects
+     * @type Map<String, Stock>
      */
     #stocks
     /**
@@ -52,7 +53,9 @@ export class StockDataLoader
      */
     constructor()
     {
-        this.#stocks = STOCKS.map((stockName) => new Stock(stockName))
+        // this.#stocks = STOCKS.map((stockName) => new Stock(stockName))
+        this.#stocks = new Map()
+        STOCKS.forEach((stock) => this.#stocks.set(stock, new Stock(stock)))
     }
     get stocks()
     {
@@ -67,7 +70,7 @@ export class StockDataLoader
         {
             const data = await getJSONFromServer(CHARTS_DATA_API)
             let charts
-            for(const stock of this.#stocks)
+            for(const [name, stock] of this.#stocks)
             {
                 charts = new Map()
                 RANGES.forEach((range) => charts.set(range, this.#createStockChart(range, data, stock.name)))
@@ -101,7 +104,7 @@ export class StockDataLoader
         try
         {
             const data = await getJSONFromServer(BOOK_VALUE_AND_PROFIT_API)
-            for(const stock of this.#stocks)
+            for(const [name, stock] of this.#stocks)
             {
                 stock.bookValue = data['stocksStatsData'][0][stock.name]['bookValue']
                 stock.profit = data['stocksStatsData'][0][stock.name]['profit']
