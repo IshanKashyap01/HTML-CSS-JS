@@ -7,9 +7,14 @@ import { StockOptionsController } from './modules/controllers/StockOptionsContro
 import { StockSummaryController } from './modules/controllers/StockSummaryController.js'
 
 main()
+/**
+ * Entry point to the Stock Market App
+ */
+const DEFAULT_RANGE = '1mo'
 
 async function main()
 {
+    // Fetch all the data
     const loader = new StockDataLoader()
     await Promise.all([
         loader.loadBookValueAndProfits(),
@@ -17,10 +22,11 @@ async function main()
         loader.loadStockCharts()
     ])
     const stocks = loader.stocks
-    const stock = stocks.get('AAPL')
-    const optionsController = new StockOptionsController(
+    // Initialize the views and controllers
+    new StockOptionsController(
         stocks, new StockOptionsView(), new StockSummaryController(new StockSummaryView()),
-        new ChartController(new ChartView(), stock, '1mo')
+        new ChartController(new ChartView(), DEFAULT_RANGE)
     )
-    optionsController.stock = stock
+    // Load the first stock option available on screen
+    document.querySelector('.stock').click()
 }

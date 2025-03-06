@@ -27,14 +27,12 @@ export class ChartController
     /**
      * Creates the controller for the chart view
      * @param {ChartView} ChartView view for chart
-     * @param {Stock} stock stock to be used
      * @param {String} range time period or range of chart to be displayed by
      * default
      */
-    constructor(ChartView, stock, range)
+    constructor(ChartView, range)
     {
         this.#chartView = ChartView
-        this.#stock = stock
         this.#currentRange = range
         this.#addEventListeners()
     }
