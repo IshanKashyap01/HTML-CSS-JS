@@ -36,6 +36,10 @@ export class StockOptionsView
 
         this.#stockOptions.push(stockNameElement)
     }
+    /**
+     * Array of all HTML elements representing a stock option which can be
+     * clicked to view its details
+     */
     get stockOptions()
     {
         return [...this.#stockOptions]

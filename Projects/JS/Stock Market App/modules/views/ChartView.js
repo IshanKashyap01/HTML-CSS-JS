@@ -29,6 +29,14 @@ export class ChartView
      * @type HTMLElement
      */
     fiveYears
+    /**
+     * Chart object used to display a graph
+     * @type Chart
+     */
+    #chart
+    /**
+     * Creates the view for the chart and range buttons
+     */
     constructor()
     {
         this.#canvas = document.querySelector('#graph')
@@ -37,8 +45,25 @@ export class ChartView
         this.oneYear = document.querySelector('#one-year')
         this.fiveYears = document.querySelector('#five-years')
     }
+    /**
+     * Draws a graph on the view using the given values
+     * @param {String} name name of the company
+     * @param {Number[]} prices array of stock prices
+     * @param {Number[]} timestamps array of timestamps
+     */
     draw(name, prices, timestamps) 
     {
-        new Chart(this.#canvas, ChartBuilder.createChartConfig(name, prices, timestamps))
+        if(this.#chart)
+        {
+            this.#chart.data.labels = timestamps
+            this.#chart.data.datasets[0].data = prices
+            this.#chart.options.plugins.crosshairName = name
+            this.#chart.update()
+        }
+        else
+        {
+            const config = ChartBuilder.createChartConfig(name, prices, timestamps)
+            this.#chart = new Chart(this.#canvas, config)
+        }
     }
 }

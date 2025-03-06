@@ -13,6 +13,26 @@ export class ChartBuilder
         }
     }
     /**
+     * Creates data for chart
+     * @param {Number[]} prices array of prices
+     * @param {Number[]} timestamps array of timestamps
+     * @returns chart data
+     */
+    static #getChartData(prices, timestamps)
+    {
+        return {
+            labels: timestamps,
+            datasets: [
+                {
+                    data: prices,
+                    borderColor: '#90ee90',
+                    tension: 0.1,
+                    pointRadius: 0
+                }
+            ]
+        }
+    }
+    /**
      * Creates options for chart
      * @returns chart options
      */
@@ -48,26 +68,6 @@ export class ChartBuilder
         }
     }
     /**
-     * Creates data for chart
-     * @param {Number[]} prices array of prices
-     * @param {Number[]} timestamps array of timestamps
-     * @returns chart data
-     */
-    static #getChartData(prices, timestamps)
-    {
-        return {
-            labels: timestamps,
-            datasets: [
-                {
-                    data: prices,
-                    borderColor: '#90ee90',
-                    tension: 0.1,
-                    pointRadius: 0
-                }
-            ]
-        }
-    }
-    /**
      * Creates plugins for the chart
      * @param {String} name name of the company
      * @returns plugins for chart
@@ -76,8 +76,11 @@ export class ChartBuilder
     {
         return [{
             id: 'crosshair',
-            afterInit: (chart) => this.#setupEventListeners(chart),
-            afterDraw: (chart) => this.#drawCrosshair(chart, name)
+            afterInit: (chart) => {
+                this.#setupEventListeners(chart)
+                chart.options.plugins.crosshairName = name
+            },
+            afterDraw: (chart) => this.#drawCrosshair(chart)
         }]
     }
     /**
@@ -104,7 +107,7 @@ export class ChartBuilder
     /**
      * Draws the vertical crosshair and displays stock info beside the cursor.
      */
-    static #drawCrosshair(chart, name)
+    static #drawCrosshair(chart)
     {
         const cursor = chart.customCursor;
         if (!cursor.active) return;
@@ -119,11 +122,15 @@ export class ChartBuilder
         // Find closest data point
         const { priceAtCursor, dateLabel } = this.#getClosestDataPoint(chart, x);
 
-        this.#drawPriceLabel(ctx, name, x, yCursor, priceAtCursor, chart.width);
+        // ✅ Always fetch the updated stock name
+        const stockName = chart.options.plugins.crosshairName || "Unknown Stock";
+
+        this.#drawPriceLabel(ctx, stockName, x, yCursor, priceAtCursor, chart.width);
         this.#drawDateLabel(ctx, x, bottomY, dateLabel);
         
         ctx.restore();
     }
+
     /**
      * Finds the closest data point to the cursor.
      */
