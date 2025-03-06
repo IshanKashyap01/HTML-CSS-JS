@@ -1,4 +1,4 @@
-import { ChartBuilder } from '../models/ChartBuilder.js'
+import { ChartBuilder } from '../services/ChartBuilder.js'
 
 /**
  * Represents the view for the chart and range buttons

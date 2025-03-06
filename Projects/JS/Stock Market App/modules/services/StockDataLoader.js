@@ -1,5 +1,5 @@
-import { Stock } from './Stock.js'
-import { StockChart } from './StockChart.js'
+import { Stock } from '../models/Stock.js'
+import { StockChart } from '../models/StockChart.js'
 import { getJSONFromServer } from '../util.js'
 /**
  * Array of all stocks to be displayed in the web page
