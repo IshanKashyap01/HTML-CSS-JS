@@ -16,6 +16,16 @@ export class StockChart
      */
     #timestamps
     /**
+     * Highest point in the graph
+     * @type {{price: Number, time: Number}}
+     */
+    #peak
+    /**
+     * Lowest point in the graph
+     * @type {{price: Number, time: Number}}
+     */
+    #low
+    /**
      * 
      * @param {String} range number of months or years
      */
@@ -24,6 +34,14 @@ export class StockChart
         this.#range = range
         this.#prices = []
         this.#timestamps = []
+        this.#peak = {
+            price: null,
+            time: null
+        }
+        this.#low = {
+            price: null,
+            time: null
+        }
     }
     get prices()
     {
@@ -34,6 +52,8 @@ export class StockChart
         if(Array.isArray(values) && values.length != 0)
         {
             this.#prices = values
+            this.#peak.price = Math.max(...values)
+            this.#low.price = Math.min(...values)
         }
     }
     get timestamps()
@@ -45,10 +65,20 @@ export class StockChart
         if(Array.isArray(timestamps) && timestamps.length != 0)
         {
             this.#timestamps = timestamps
+            this.#peak.time = Math.max(...timestamps)
+            this.#low.time = Math.min(...timestamps)
         }
     }
     get range()
     {
         return this.#range
+    }
+    get peak()
+    {
+        return this.#peak
+    }
+    get low()
+    {
+        return this.#low
     }
 }

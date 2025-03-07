@@ -44,6 +44,8 @@ export class ChartView
         this.threeMonths = document.querySelector('#three-months')
         this.oneYear = document.querySelector('#one-year')
         this.fiveYears = document.querySelector('#five-years')
+        this.peakElement = document.querySelector('#peak')
+        this.lowElement = document.querySelector('#low')
     }
     /**
      * Draws a graph on the view using the given values
@@ -65,5 +67,34 @@ export class ChartView
             const config = ChartBuilder.createChartConfig(name, prices, timestamps)
             this.#chart = new Chart(this.#canvas, config)
         }
+    }
+    /**
+     * Sets the peak value of the stock and the time it happened
+     * @param {Number} price price
+     * @param {Number} timestamp time in ms passed since 1 Jan 1971
+     */
+    setPeak(price, timestamp)
+    {
+        this.peakElement.textContent = this.#formatPoint(price, timestamp)
+    }
+    /**
+     * Sets the lowest value of the stock and the time it happened
+     * @param {Number} price price
+     * @param {Number} timestamp time in ms passed since 1 Jan 1971
+     */
+    setLow(price, timestamp)
+    {
+        this.lowElement.textContent = this.#formatPoint(price, timestamp)
+    }
+    /**
+     * Formats the x and y value of a point in the graph to an easily readable
+     * string value
+     * @param {Number} price price of the stock
+     * @param {Number} timestamp time in ms
+     * @returns {String} formatted value of a point in the stock graph
+     */
+    #formatPoint(price, timestamp)
+    {
+        return `$${price.toFixed(2)} @ ${new Date(timestamp * 1000).toLocaleDateString()}`
     }
 }

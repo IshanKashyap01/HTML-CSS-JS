@@ -4,6 +4,21 @@
 {
     background-color: rgb(1, 1, 69);
     @include mixins.flex(column);
+    .range-info
+    {
+        width: 100%;
+        @include mixins.flex;
+        justify-content: space-evenly;
+        opacity: 0.8;
+        #peak
+        {
+            color: #90ee90;
+        }
+        #low
+        {
+            color: red;
+        }
+    }
     canvas
     {
         flex-grow: 1;

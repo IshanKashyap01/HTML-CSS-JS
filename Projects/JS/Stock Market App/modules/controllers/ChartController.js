@@ -69,5 +69,7 @@ export class ChartController
     {
         const chart = this.#stock.stockCharts.get(this.#currentRange)
         this.#chartView.draw(this.#stock.name, chart.prices, chart.timestamps)
+        this.#chartView.setPeak(chart.peak.price, chart.peak.time)
+        this.#chartView.setLow(chart.low.price, chart.low.time)
     }
 }

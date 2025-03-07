@@ -25,6 +25,19 @@ body .loss {
   display: flex;
   flex-flow: column nowrap;
 }
+.chart .range-info {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  opacity: 0.8;
+}
+.chart .range-info #peak {
+  color: #90ee90;
+}
+.chart .range-info #low {
+  color: red;
+}
 .chart canvas {
   flex-grow: 1;
 }
