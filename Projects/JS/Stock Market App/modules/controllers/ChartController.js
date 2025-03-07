@@ -1,5 +1,4 @@
 import { Stock } from '../models/Stock.js'
-import { StockChart } from '../models/StockChart.js'
 import { ChartView } from '../views/ChartView.js'
 /**
  * Updates the view for stock chart

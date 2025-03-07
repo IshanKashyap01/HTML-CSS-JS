@@ -16,7 +16,7 @@ export class ChartBuilder
      * Creates data for chart
      * @param {Number[]} prices array of prices
      * @param {Number[]} timestamps array of timestamps
-     * @returns chart data
+     * @returns chart configuration data
      */
     static #getChartData(prices, timestamps)
     {
@@ -130,7 +130,6 @@ export class ChartBuilder
         
         ctx.restore();
     }
-
     /**
      * Finds the closest data point to the cursor.
      */

@@ -5,7 +5,7 @@ import { StockChart } from './StockChart.js'
 export class Stock
 {
     /**
-     * Name of the company
+     * Name of the stock
      */
     #name
     /**
@@ -30,7 +30,7 @@ export class Stock
     #stockCharts
     /**
      * 
-     * @param {String} name name of the company
+     * @param {String} name name of the stock
      */
     constructor(name)
     {

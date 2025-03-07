@@ -1,3 +1,6 @@
+/**
+ * Represents a price vs time graph of a stock
+ */
 export class StockChart
 {
     /**

@@ -73,7 +73,7 @@ export class StockDataLoader
             for(const [name, stock] of this.#stocks)
             {
                 charts = new Map()
-                RANGES.forEach((range) => charts.set(range, this.#createStockChart(range, data, stock.name)))
+                RANGES.forEach((range) => charts.set(range, this.#createStockChart(range, data, name)))
                 stock.stockCharts = charts
             }
         }
@@ -106,8 +106,8 @@ export class StockDataLoader
             const data = await getJSONFromServer(BOOK_VALUE_AND_PROFIT_API)
             for(const [name, stock] of this.#stocks)
             {
-                stock.bookValue = data['stocksStatsData'][0][stock.name]['bookValue']
-                stock.profit = data['stocksStatsData'][0][stock.name]['profit']
+                stock.bookValue = data['stocksStatsData'][0][name]['bookValue']
+                stock.profit = data['stocksStatsData'][0][name]['profit']
             }
         }
         catch(error)
