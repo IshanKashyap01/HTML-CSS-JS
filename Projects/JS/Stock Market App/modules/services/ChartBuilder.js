@@ -173,15 +173,15 @@ export class ChartBuilder
      */
     static #drawPriceLabel(ctx, name, x, yCursor, price, chartWidth)
     {
-        const offsetX = 10;
+        const offsetX = 8;
         let textX = x + offsetX;
         let textY = yCursor;
         const text = `${name}: $${price}`;
         const textWidth = ctx.measureText(text).width;
         // Prevent clipping at right edge
-        if (textX + textWidth > chartWidth)
+        if (textX + textWidth >= chartWidth - 50)
         {
-            textX = x - textWidth - offsetX;
+            textX = x - offsetX;
         }
         ctx.fillStyle = '#ffffff';
         ctx.font = '12px Arial';
@@ -193,7 +193,20 @@ export class ChartBuilder
      */
     static #drawDateLabel(ctx, x, bottomY, dateLabel)
     {
+        const offsetX = 8;
+        const switchThreshold = ctx.canvas.width * 0.3;
+        let textX = x + offsetX;
+        // Smooth side-switching by using a wider threshold
+        if (x > ctx.canvas.width - switchThreshold) 
+        {
+            textX = x - offsetX;
+            ctx.textAlign = 'right';
+        } 
+        else if (x < switchThreshold) 
+        {
+            ctx.textAlign = 'left';
+        } 
         ctx.fillStyle = '#808080';
-        ctx.fillText(dateLabel, x, bottomY - 5);
+        ctx.fillText(dateLabel, textX, bottomY - 5);
     }
 }
