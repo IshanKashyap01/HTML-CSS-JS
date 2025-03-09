@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Stock Market Analysis</h1>
+    </header>
+    <!-- Line chart of the stock selected and buttons for range adjustment -->
+    <main class="chart">
+        <div class="range-info">
+            <div>📈Peak: <span id="peak"></span></div>
+            <div>📉Low: <span id="low"></span></div>
+        </div>
+        <canvas id="graph"></canvas>
+        <div class="range">
+            <button id="one-month" class="button">1 Month</button>
+            <button id="three-months" class="button">3 Months</button>
+            <button id="one-year" class="button">1 Year</button>
+            <button id="five-years" class="button">5 Years</button>
+        </div>
+    </main>
+    <!-- List of stocks to select -->
+    <aside class="stock-list"></aside>
+    <!-- Summary of the stock selected -->
+    <footer class="summary">
+        <header>
+            <span id="name"></span>
+            <span id="profit"></span>
+            <span id="book-value"></span>
+        </header>
+        <article>
+            <p id="summary"></p>
+        </article>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

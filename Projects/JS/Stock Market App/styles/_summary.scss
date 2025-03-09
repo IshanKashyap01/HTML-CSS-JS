@@ -1,0 +1,22 @@
+@use 'mixins';
+
+.summary
+{
+    header
+    {
+        @include mixins.flex;
+        column-gap: 2rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        .profit
+        {
+            color: green;
+        }
+        margin: 1rem 0;
+    }
+    #summary
+    {
+        font-size: smaller;
+        text-align: justify;
+    }
+}
