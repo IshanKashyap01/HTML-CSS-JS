@@ -1,0 +1,23 @@
+@use 'mixins';
+
+.stock-list
+{
+    display: grid;
+    grid-template-columns: repeat(3, 0.15fr);
+    gap: 1rem;
+    place-content: baseline center;
+    justify-items: start;
+    .stock
+    {
+        justify-self: stretch;
+        background-color: rgb(1, 1, 102);
+        color: white;
+        padding: 0.25rem 0;
+        cursor: pointer;
+        border-radius: 10%;
+        &:hover
+        {
+            background-color: rgb(1, 1, 41);
+        }
+    }
+}
