@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../multimedia/plan-bg.png);
+    background-image: url(../../../../../multimedia/plan-bg.png);
     justify-content: space-evenly;
     width: 100%;
 }
