@@ -5,13 +5,13 @@
 
 - Precedence b/w the methods is decided as follows:
 
+  - *inline* is given precedence over *internal*
+
   - If both *external and internal* are present in the `head` tag, precedence
-  is given to whichever comes first
+  is given to whichever comes last
 
   - Otherwise, styles defined within the same tag (*inline/internal*) takes
   precedence
-
-  - *inline* is given precedence over *inline*
 
 ## Inline Styles
 
